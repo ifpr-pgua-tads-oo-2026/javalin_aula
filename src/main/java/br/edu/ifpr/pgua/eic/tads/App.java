@@ -12,7 +12,10 @@ public class App {
     public static void main( String[] args ){
         var app = JavalinUtils.makeApp(8080);
         
-        app.get("/", ctx -> ctx.result("Hello World!"));
+        IndexController indexController = new IndexController();
+
+        
+        app.get("/", indexController.get);
 
         
     }
