@@ -16,7 +16,7 @@ public class App {
         IndexController indexController = new IndexController();
 
         app.get("/",indexController.get);
-        app.get("/boas-vindas", ctx -> { ctx.result("Olá Mundo!!");});
+        app.get("/boas-vindas", ctx -> { ctx.result("Olá Mundooooooooo!!");});
         app.get("/cadastro",ctx -> ctx.html("<html lang=pt-BR><meta charset=\"UTF-8\"> Aqui é cadastro!</html>"));
         
     }

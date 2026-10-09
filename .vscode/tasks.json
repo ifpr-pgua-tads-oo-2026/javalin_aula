@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Maven Compile (Background)",
+      "type": "shell",
+      "command": "mvn",
+      "args": [
+        "compile",
+        "-DskipTests",
+        "-q"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
